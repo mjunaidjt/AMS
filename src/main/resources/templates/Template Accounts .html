@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin:0;
+            }
+            .head{
+                background-color: rgba(0, 0, 0, 0.815);
+                color:rgba(255,255,255,.55);
+                width: max-width;
+                padding: 0.5em;
+                height:5em;
+                font-size: 1.3em;
+            }
+            .navigation{
+                overflow: hidden;
+                background-color: rgba(0, 0, 0, 0.856);
+
+             /*   display: inline-block;*/
+            }
+            #navi a{
+                display:block;
+                text-decoration:none;
+            }
+            ul,li{
+                list-style-type: none;
+                list-style-position: center;
+                display: inline-block;
+                margin-left:40px;
+            }
+            li{
+                padding-right : 20px;
+                
+                color:rgba(255, 255, 255, 0.685);
+                font-size: 18px;
+                font-family: Georgia, 'Times New Roman', Times, serif ;
+                font-transform : capitalize;
+                display:inline-block;
+            }
+            .content{
+            
+                padding: 0,10,5,10;
+                margin-top: -14px;
+                margin-bottom:0;
+                background-color: rgba(122, 81, 71, 0.267);
+                display: block;
+                width:max-width;
+                height: 45em;
+            }
+            .foot{
+                background-color: rgba(0, 0, 0, 0.815);
+                width: max-width;
+                margin:0;
+                padding: 8px;
+            }
+            h1{
+                font-style: Georgia;
+                text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.014);
+            }
+            caption{ 
+               color: rgba(202, 187, 187, 0.726);
+               text-shadow: 4px 6px 6px rgba(8, 8, 8, 0.705);
+                border: 1px,outset, rgba(15, 15, 15, 0.5);
+                border-radius: 8px;
+                background-color:  rgba(51, 43, 30, 0.582);
+                padding: 8px;
+            
+                font-size: 30px;
+                text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.014);
+
+            }
+            /* table css */
+            tr:nth-child(odd) {background-color: #8ea8a8d7;}
+            table{
+                width:100%;
+            }
+            table,th,td{
+            
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding : 12px;
+        }
+        th{
+            padding: 15px;
+            height: 25px;
+        }
+        .disc{
+                text-align: center;
+        }
+        .dr{
+                text-align: left;
+        }
+
+        .cr{
+             text-align: right;
+        }
+ 
+        </style>
+    </head>
+    <body>
+            <div>
+                <div class="headnav">
+                    <header class="head">
+                <h1 style=" text-align: center;"  >Accounting Management System</h1>
+                    </header>
+                    <nav id="navi" class="navigation">
+                <ul>
+                     <li><a href="www.google.com/home">Home</a></li>
+                    <li><a href="www.google.com">Transactions</a></li>
+                    <li><a href="www.google.com/">Inventory</a></li>
+                    <li><a href="www.google.com/">Accounts</a></li>
+                    <li><a href="www.google.com/" >Help</a></li>
+                </ul>
+                    </nav>
+                </div>
+
+                    <section class="content">
+                            <div>
+                <div>
+                <table>
+                    <caption><h1>Jernal General</h1></caption>
+                    <tr>
+                            <th >Trasnsaction ID</th>
+                            <th>Date</th>
+                            <th>Transaction Account</th>
+                            <td>Debit Account</td>
+                            <th>Credit Amount</th>
+                    </tr>
+                    <tr>
+                        <td class="tid" rowspan="2">1</td>
+                        <td rowspan="2"> 12-2-2019</td>
+                        <td>Debited Account</td>
+                        <td class="dr" colspan="2" >1000</td>
+                       
+                    </tr>
+                    <tr>
+                            
+                            <th>Credited Amount</th>
+                            <td class="cr" colspan="2" >1000</td>
+                    </tr>
+                    <tr>
+                            <td class="disc" colspan="5" >Description of transaction</td>>
+                    </tr>
+                    <tr>
+                            <td class="tid" rowspan="2">2</td>
+                            <td rowspan="2"> 12-2-2019</td>
+                            <td>Goods Account</td>
+                            <td class="dr" colspan="2" >1000</td>
+                           
+                        </tr>
+                        <tr>
+                                
+                                <td>Cash Account</td>
+                                <td class="cr" colspan="2" >1000</td>
+                        </tr>
+                        <tr>
+                                <td class="disc" colspan="5" >Description of transaction</td>
+                        </tr>
+                                <tr>
+                        <td class="tid" rowspan="2">3</td>
+                        <td rowspan="2"> 12-2-2019</td>
+                        <td>Asset Account</td>
+                        <td colspan="2" >1000</td>
+                       
+                    </tr>
+                    <tr>
+                            
+                            <td>Cash Account</td>
+                            <td colspan="2" >1000</td>
+                    </tr>
+                    <tr>
+                            <td class="disc" colspan="5" >Machines purchase by AK Machines</td>>
+                    </tr>
+                    <tr>
+                            <td class="tid" rowspan="2">4</td>
+                            <td rowspan="2"> 12-2-2019</td>
+                            <td>Cash A/C</td>
+                            <td class="dr" colspan="2" >1000</td>
+                           
+                        </tr>
+                        <tr>
+                                
+                                <td>Product A/C</td>
+                                <td class="cr" colspan="2" >1000</td>
+                        </tr>
+                        <tr>
+                                <td class="disc" colspan="5" >Products sold in market</td>>
+                        </tr>
+                    </table>
+                    </div>
+                 </div>
+                    </section>
+                    <footer class="foot">
+                            <article><i class="btmspace-30 fa fa-3x fa-expeditedssl"></i>
+                                <h6 class="heading font-x1">Jernal Gneeral</h6>
+                                <p class="btmspace-30">  jernal genral of transaction provides all the info of transaction genrally it includes Transaction Id ,Date debit and Credit amount.[&hellip;]</p>
+                                <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+                             </article>
+                    </footer>
+                </div>
+    </body>
+
+
+</html>
